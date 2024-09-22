@@ -1,0 +1,246 @@
+@import url('reset.css');
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/roboto-medium-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    color: #212121;
+}
+
+.section-form {
+    background: url(../img/img-background.jpg);
+    background-size: cover;
+    height: 760px;
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+
+.section-form::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: #16151580;
+}
+
+.form {
+    background: #E9E9E940;
+    width: 496px;
+    padding: 60px 78px;
+    position: relative;
+    z-index: 5;
+}
+
+.switch {
+    display: flex;
+    border: 1px solid #153416;
+    border-radius: 30px;
+    padding: 2px;
+    margin-bottom: 75px;
+}
+
+.switch div {
+    width: 50%;
+}
+
+.switch label {
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    padding: 9px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.switch input {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+
+.switch input:checked + label {
+    border-radius: 30px;
+    background-color: #153416;
+    border: 1px solid #153416;
+}
+
+.form-title {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.form-part {
+    margin-bottom: 40px;
+}
+
+.input-text {
+    padding: 15px 20px;
+    background-color: #929191;
+    border-radius: 30px;
+    border: 1px solid #929191;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.input-check-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.input-check input {
+   position: absolute;
+   z-index: -1;
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+
+.input-check label {
+    display: inline-block;
+    padding: 2px 2px 2px 25px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+}
+
+.input-check label::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #D9D9D9;
+    background: #E9E9E925;
+    border-radius: 2px;
+}
+
+.input-check input:checked + label::before {
+    background: #153416;
+    border: 1px solid #153416;
+}
+
+.input-check input:checked + label::after {
+    position: absolute;
+    content: "";
+    top: 2px;
+    left: 5px;
+    width: 4px;
+    height: 9px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+}
+
+.input-link {
+    font-size: 12px;
+    color: #153416;
+}
+
+.input-button {
+    
+}
+
+.input-btn {
+    padding: 15px 20px;
+    background-color: #153416;
+    border-radius: 30px;
+    border: 1px solid #153416;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+.input-info {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.input-info p {
+    color: #153416;
+    font-size: 12px;
+}
+
+.input-info a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.input-icons-title {
+    font-size: 12px;
+    color: #153416;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-icons-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input-icons-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.input-icons-list svg {
+    width: 24px;
+    height: 24px;
+    fill: #153416; 
+}
+
+.hidden svg {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
